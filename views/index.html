@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A2HS GA Demo</title>
+  <link rel="manifest" href="/manifest.json">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114121901-5"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114121901-5');
+  </script>
+  <script defer src="/client.js"></script>
+</head>
+
+<body>
+
+
+  <button id="clearCookies">Clear Cookies</button>
+  <button id="trackConversion">Conversion</button>
+  <button id="showA2HSPrompt" style="visibility:hidden;">Add to Homescreen</button>
+
+
+  <script>
+    // clearCookies();
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+  </script>
+
+</body>
+
+</html>
