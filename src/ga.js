@@ -7,6 +7,12 @@ const EVENTS = {
       category: 'ecommerce',
       label: '',
       interaction: true
+    },
+    purchase2: {
+      action: 'purchaseCust',
+      category: 'ecommerceCust',
+      label: 'custom',
+      interaction: true
     }
   },
   A2HS: {

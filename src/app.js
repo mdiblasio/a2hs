@@ -34,6 +34,7 @@ const clearCookies = (e) => {
 const trackConversion = (e) => {
   log(`trackConversion()`);
   ga.sendEvent(EVENTS.CONVERSIONS.purchase);
+  ga.sendEvent(EVENTS.CONVERSIONS.purchase2);
   ga.trackConversion();
 }
 

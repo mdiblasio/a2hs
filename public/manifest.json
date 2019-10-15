@@ -5,7 +5,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/openFromHome.html?utm_source=homescreen",
   "icons": [
     {
       "src": "/icon-192x192.png",
